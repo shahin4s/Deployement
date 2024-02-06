@@ -10,6 +10,15 @@ For this we need premimum subscription then w
  ![image](https://github.com/shahin4s/Deployement/assets/26712617/be03b9b4-d79d-4c02-af8f-e9e5c6b1e9b0)
 
 
+### Azure AD Microsoft Entra ID configuration.
+A few things needs to be configured in Entra ID/AAD
+- Device settings
+- Mobility
+- Company Branding
+- Dynamic group / Azure AD security group for Autopilot devices
+
+## Device settings
+
 ### Microsoft Intune configuration
 A few things needs to be configured in Microsoft Intune before we can start enrolling devices via Windows Autopilot
 - CNAME Validation
