@@ -8,3 +8,10 @@ For this we need premimum subscription then w
  Go to Azure Active Directory > Mobility (MDM and MAM) > Microsoft Intune.
  Configuration bellow 
  ![image](https://github.com/shahin4s/Deployement/assets/26712617/be03b9b4-d79d-4c02-af8f-e9e5c6b1e9b0)
+
+
+### Microsoft Intune configuration
+A few things needs to be configured in Microsoft Intune before we can start enrolling devices via Windows Autopilot
+- CNAME Validation
+- Enrollment Status Page
+- Deployment Profiles
