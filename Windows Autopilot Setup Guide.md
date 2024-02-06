@@ -33,11 +33,13 @@ To create the dynamic security group
 
 ![image](https://github.com/shahin4s/Deployement/assets/26712617/e71c57fe-66c8-410c-af48-6851fa009952)
 
-Add dynamic query on groupways 
+Add dynamic query on groupwise. 
+
+```
 Winodws
 ```sh
 (device.deviceOSType -match "Windows")
-```
+
 macOS
 ```sh
 (device.deviceOSType -match "macOS") or (device.deviceOSType -match "OS X") or (device.deviceModel -match "MacBook Pro") or (device.deviceModel -match "MacBook Air")
@@ -51,6 +53,7 @@ iOS
 ```sh
 (device.deviceOSType -match "iOS") or (device.deviceCategory -match "iPhone") and (device.deviceCategory -match "iPad")
 ```
+
 ### Microsoft Intune configuration
 A few things needs to be configured in Microsoft Intune before we can start enrolling devices via Windows Autopilot
 - CNAME Validation
