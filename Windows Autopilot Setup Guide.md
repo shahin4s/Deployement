@@ -83,3 +83,31 @@ let’s have a look at the CNAME validation
 **Devices > Enroll Devices > Windows enrollment and click onEnrollment Status Page** Edit propertis .
 ![image](https://github.com/shahin4s/Deployement/assets/26712617/2a1b2558-73d5-4b6f-a36a-144d499c40e3)
 
+##### Deployment Profiles
+
+
+Let’s create a new Windows Autopilot deployment profile.
+**Devices > Enroll Devices > Windows enrollment and click on Deployment Profiles** Create for windows PC
+![image](https://github.com/shahin4s/Deployement/assets/26712617/6fd4b28d-06e5-4d9e-9188-0c5612a88c24)
+
+
+ 
+## Register your Device for Autopilot
+There are two ways to register Windows 10 to intune 
+- BYOD enrollment.
+- Bulk enrollment via provisioning package.
+
+##### BOYD Enrollment
+These options can be used by users in BYOD scenarios who want to enroll their personal devices without joining them to a domain
+
+#### Bulk enrollment
+For the bulk enrollment we have to upload hardare hash id to Intune for Windows Autopilot.Microsoft recommends using Intune and we will use Intune in this post.
+lets import  hadrwadre hash id for Autopailot.
+**Devices > Enroll Devices > Windows enrollment and click on Devices** import the exported csv file 
+![image](https://github.com/shahin4s/Deployement/assets/26712617/a67356f0-ff2b-4f55-9ea9-fdfd8cdc467c)
+
+
+
+
+
+
