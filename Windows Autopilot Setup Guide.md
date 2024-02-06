@@ -106,6 +106,35 @@ lets import  hadrwadre hash id for Autopailot.
 **Devices > Enroll Devices > Windows enrollment and click on Devices** import the exported csv file 
 ![image](https://github.com/shahin4s/Deployement/assets/26712617/a67356f0-ff2b-4f55-9ea9-fdfd8cdc467c)
 
+Go on the windows workstation device which is pre-installed. prass start button 5 times then we will get followinscreen and click 
+![Screenshot 2024-02-06 202433](https://github.com/shahin4s/Deployement/assets/26712617/b2bc36af-3945-4b19-a967-0c2cc100f46b)
+
+In the next screen, you see Setting up your device for work. There are three main steps here.
+
+
+![Screenshot 2024-02-06 202806](https://github.com/shahin4s/Deployement/assets/26712617/4bd41a8d-fa17-4f68-94e5-3232af74ed29)
+
+Windows Autopilot Setup Complete
+The device should show up in Intune as an enabled Autopilot device. The icon for this device is bit different from rest. Go into the Intune Azure portal, and select Devices > All devices
+![image](https://github.com/shahin4s/Deployement/assets/26712617/8007b29d-392a-491a-aa02-af8e01ff6305)
+
+
+# How to export hardare hash 
+We can expect hardere has by powershed or gui 
+When you turn on a new devices delivered with Windows 10 or 11 pre-installed for the first time and  don’t have to run the complete OOBE setup. connect internet LAN/WLAN
+
+Shift + F10 ( open cmd and follow the instraation
+```sh
+PS C:\WINDOWS\system32> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+PS C:\Users\shahin> md script
+PS C:\Users\shahin> Save-Script -Name Get-WindowsAutopilotinfo -Path .\script\
+PS C:\Users\shahin> cd .\script\
+PS C:\Users\shahin\script> .\Get-WindowsAutoPilotInfo.ps1 -OutputFile %hostname%.csv
+```
+Copy the csv to user and upload to intune.
+
+
+
 
 
 
