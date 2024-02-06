@@ -131,7 +131,8 @@ The device should show up in Intune as an enabled Autopilot device. The icon for
 We can expect hardere has by powershed or gui 
 When you turn on a new devices delivered with Windows 10 or 11 pre-installed for the first time and  don’t have to run the complete OOBE setup. connect internet LAN/WLAN
 
-Shift + F10 ( open cmd and follow the instraation
+Shift + F10  command prompt will appear, type in PowerShell and loop the folloing.
+
 ```sh
 PS C:\WINDOWS\system32> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 PS C:\Users\shahin> md script
