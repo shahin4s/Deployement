@@ -17,7 +17,7 @@ A few things needs to be configured in Entra ID/AAD
 - Company Branding
 - Dynamic group / Azure AD security group for Autopilot devices
 
-#### Device settings
+##### Device settings
 
 ### Microsoft Intune configuration
 A few things needs to be configured in Microsoft Intune before we can start enrolling devices via Windows Autopilot
