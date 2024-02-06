@@ -123,6 +123,7 @@ In the next screen, you see Setting up your device for work. There are three mai
 
 Windows Autopilot Setup Complete
 The device should show up in Intune as an enabled Autopilot device. The icon for this device is bit different from rest. Go into the Intune Azure portal, and select Devices > All devices
+
 ![image](https://github.com/shahin4s/Deployement/assets/26712617/8007b29d-392a-491a-aa02-af8e01ff6305)
 
 
@@ -139,6 +140,8 @@ PS C:\Users\shahin> cd .\script\
 PS C:\Users\shahin\script> .\Get-WindowsAutoPilotInfo.ps1 -OutputFile %hostname%.csv
 ```
 Copy the csv to user and upload to intune.
+
+# Thank you!
 
 
 
