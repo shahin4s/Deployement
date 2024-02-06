@@ -35,11 +35,12 @@ To create the dynamic security group
 
 Add dynamic query on groupwise. 
 
-```
+
 Winodws
+
 ```sh
 (device.deviceOSType -match "Windows")
-
+```
 macOS
 ```sh
 (device.deviceOSType -match "macOS") or (device.deviceOSType -match "OS X") or (device.deviceModel -match "MacBook Pro") or (device.deviceModel -match "MacBook Air")
