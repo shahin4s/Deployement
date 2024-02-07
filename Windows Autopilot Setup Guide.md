@@ -1,11 +1,31 @@
 # Modern Deployment Magic with Windows Autopilot
 
 ### Autopailot
+
 According to Microsoft, Windows Autopilot comprises a range of technologies aimed at simplifying the setup and pre-configuration of new devices, ensuring they are swiftly ready for productive use. Beyond just initial setup, Autopilot proves invaluable for tasks like resetting, repurposing, or recovering devices. The beauty of the Autopilot solution lies in its ability to achieve all this with minimal infrastructure management – an uncomplicated and straightforward process for IT departments.
 
+### Benefits of Windows Autopilot
+
+- Automatically join devices to Azure Active Directory (Azure AD) or Active Directory (via Hybrid Azure AD Join).
+- Self-deployment and No need to os re-imaging
+- Customize OOB experience and Profiles.
+- Integration with Microsoft Intune MDM.
+- Greater security and compliance
+
+
+### Windows Autopilot Licensing Requirements
+
+To use Windows Autopilot, you need to have specific subscriptions. These subscriptions give you access to the features required in Windows 10/11, Azure Active Directory, and an MDM service like Microsoft Intun
+- Microsoft 365 Business Premium subscription
+- Microsoft 365 F1 or F3 subscription
+- Microsoft 365 Academic A1, A3, or A5 subscription
+- Microsoft 365 Enterprise E3 or E5 subscription, which includes Windows 10, Microsoft 365, and EM+S features (Azure AD and Intune).
+- Enterprise Mobility + Security E3 or E5 subscription, which includes all necessary Azure AD and Intune features.
+- Intune for Education subscription, which includes all necessary Azure AD and Intune features.
+- Azure Active Directory Premium P1 or P2 and Microsoft Intune subscription (or an alternative MDM service).
+
+
 ### Verify Microsoft entra ID subscription.
-
-
 
 ### Azure AD Microsoft Entra ID configuration.
 A few things needs to be configured in Entra ID/AAD
