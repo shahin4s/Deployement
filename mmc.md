@@ -1,4 +1,4 @@
-# MMC Command Line Shortcuts for System Admins
+# MMC Command Line Shortcuts for System Admins 
 
 Below is a list of popular Microsoft Management Console (MMC) command line shortcuts frequently used by system administrators:
 
@@ -52,3 +52,6 @@ Below is a list of popular Microsoft Management Console (MMC) command line short
 - **WINS Server Manager**: `winsmgmt.msc`
 
 These shortcuts provide quick access to various management consoles, helping system administrators efficiently manage their systems and networks.
+
+Thank you!
+
