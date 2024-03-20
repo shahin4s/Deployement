@@ -26,7 +26,7 @@ We will first generate the DKIM keys in the Microsoft 365 security centre and it
   <img width="898" alt="Screenshot 2024-03-19 at 11 16 11 AM" src="https://github.com/shahin4s/Deployement/assets/26712617/e9e837f6-5944-4885-9ec3-be01352c346a">
   
 
-## Copy or Write down the keys
+## Copy down the keys
 
 ```
 Name: selector1._domainkey
