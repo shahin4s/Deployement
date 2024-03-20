@@ -23,12 +23,12 @@ We will first generate the DKIM keys in the Microsoft 365 security centre and it
 
 ## Copy or Write down the keys
 
-``` Name: selector1._domainkey
+```
+Name: selector1._domainkey
 Value: selector1-shahin-at._domainkey.shahinde.onmicrosoft.com
 
 Name: selector2._domainkey
 Value: selector2-shahin-at._domainkey.shahinde.onmicrosoft.com
-shahin-at._domainkey.shahinde.onmicrosoft.com
 ``` 
 update the both recodes folloing way
 
