@@ -1,4 +1,4 @@
-![image](https://github.com/shahin4s/Deployement/assets/26712617/f503bda6-8003-410a-96c3-801445f715f8)#### How to Configure Microsoft Office 365 DKIM record.
+### How to Configure Microsoft Office 365 DKIM record.
 
 ## DKIM
 DKIM (DomainKeys Identified Mail)  is the second authentication method that helps with verifying mail sent from your Office 365 is legitimate. Together with SPF and DMARC, this prevents attackers from spoofing your emails
