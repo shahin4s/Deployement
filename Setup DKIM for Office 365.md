@@ -48,6 +48,8 @@ Once you have DKIM configured for the Office 365 domain, it’s good to check bo
 - Fill in the **domain name** and **selector1**. Click DKIM Lookup.
  ![image](https://github.com/shahin4s/Deployement/assets/26712617/dfb82ae5-2314-425d-adee-125200420d89)
 
+We have successfully configured the DKIM records for the Office 365 domain
+
 
 
 ### DKIM selector2 not working for Microsoft 365 domain
