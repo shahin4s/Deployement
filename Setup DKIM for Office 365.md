@@ -1,4 +1,4 @@
-### How to Configure Microsoft Office 365 DKIM record.
+#### How to Configure Microsoft Office 365 DKIM record.
 
 ## DKIM
 DKIM (DomainKeys Identified Mail)  is the second authentication method that helps with verifying mail sent from your Office 365 is legitimate. Together with SPF and DMARC, this prevents attackers from spoofing your emails
@@ -6,14 +6,23 @@ DKIM (DomainKeys Identified Mail)  is the second authentication method that help
 ## Configure DKIM for Office 365
 DKIM reacoad does not need to for defulat doamin .onmicrosoft.com. 
 
-# Create DKMI key 
 
+## Why need to configure DKIM Office 365?
+There are a number of reason to configure DKIM
+- Improve Email Security its helps prevent spoofing and phishing attacks. Spoofing occurs when unauthorized senders use your domain name to send emails
+- Improve deliverability of your emails. Some email servers will reject emails that are not DKIM-authenticated. Recipient servers are  accept email when email is DKIM-signed.
+- Compliance with Industry Regulations.
 
-- Login at https://security.microsoft.com/dkimv2
-- Select the domain that you are sending mail from
-- Click Create DKIM Keys
+# Create DKIM key 
+We will first generate the DKIM keys in the Microsoft 365 security centre and it will be easy to copy and paste the relevant DNS record values.
+- Login to security.microsoft.com/dkimv2.
+- Choose the domain to send mail from.
+- Click Create DKIM Keys.
+  <img width="898" alt="Screenshot 2024-03-19 at 11 16 11 AM" src="https://github.com/shahin4s/Deployement/assets/26712617/e9e837f6-5944-4885-9ec3-be01352c346a">
+  
 
 # Copy or Write down the keys
+
 ``` Name: selector1._domainkey
 Value: selector1-shahin-at._domainkey.shahinde.onmicrosoft.com
 
