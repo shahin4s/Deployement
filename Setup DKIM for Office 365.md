@@ -21,8 +21,8 @@ Name: selector2._domainkey
 Value: selector2-shahin-at._domainkey.shahinde.onmicrosoft.com
 shahin-at._domainkey.shahinde.onmicrosoft.com
 ``` 
-
 ![image](https://github.com/shahin4s/Deployement/assets/26712617/2ff08985-ab26-4195-807a-9532ba7704dd)
+
 
 # publish DKIM records in public dns
 Login in you DNS provider admin console and create new cname races as I am using Azure dns so I will show in azure dns console 
