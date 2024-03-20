@@ -3,11 +3,8 @@
 ### DKIM
 DKIM (DomainKeys Identified Mail)  is the second authentication method that helps with verifying mail sent from your Office 365 is legitimate. Together with SPF and DMARC, this prevents attackers from spoofing your emails.DKIM utilizes a cryptographic key pair and DNS records to provide sender validation and message integrity.
 
+
 ![image](https://github.com/shahin4s/Deployement/assets/26712617/fc921684-41ab-4a06-854d-2885f8b393bb)
-
-
-### Configure DKIM for Office 365
-DKIM reacoad does not need to for defulat doamin .onmicrosoft.com. 
 
 
 ### Why need to configure DKIM Office 365?
@@ -15,6 +12,11 @@ There are a number of reason to configure DKIM
 - Improve Email Security its helps prevent spoofing and phishing attacks. Spoofing occurs when unauthorized senders use your domain name to send emails
 - Improve deliverability of your emails. Some email servers will reject emails that are not DKIM-authenticated. Recipient servers are  accept email when email is DKIM-signed.
 - Compliance with Industry Regulations.
+
+
+### Configure DKIM for Office 365
+DKIM reacoad does not need to for defulat doamin .onmicrosoft.com. 
+
 
 ## Create DKIM key 
 We will first generate the DKIM keys in the Microsoft 365 security centre and it will be easy to copy and paste the relevant DNS record values.
