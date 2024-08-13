@@ -25,5 +25,5 @@
 
    -  
 
-   -  Platform: Windows 10 and later
-   -  Profile: BitLocker
+       -  Platform: Windows 10 and later
+       -  Profile: BitLocker
