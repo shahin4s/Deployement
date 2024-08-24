@@ -23,7 +23,14 @@
    -  login Microsoft Intune admin center https://intune.microsoft.com
    -  Navigate to Endpoint Security node and under Manage, select Disk Encryption.To create a new policy, select Create Policy.
 
-   -  
-
        -  Platform: Windows 10 and later
        -  Profile: BitLocker
+       -  Name: Enable and Configure Bitlocker using Intune.
+       -  Description: Create an endpoint security policy for BitLocker.
+       -     image 1
+##### Configure Settings in Intune
+  -    - Enable full-disk encryption for OS and fixed data drives:  Yes
+       - Require storage cards to be encrypted (mobile only)
+       - Hide prompt about third-party encryption:
+       - Allow standard users to enable encryption during Autopilot
+       - Configure client-driven recovery password rotation
