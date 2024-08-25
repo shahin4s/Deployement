@@ -23,14 +23,49 @@
    -  login Microsoft Intune admin center https://intune.microsoft.com
    -  Navigate to Endpoint Security node and under Manage, select Disk Encryption.To create a new policy, select Create Policy.
 
-       -  Platform: Windows 10 and later
-       -  Profile: BitLocker
-       -  Name: Enable and Configure Bitlocker using Intune.
-       -  Description: Create an endpoint security policy for BitLocker.
+       -  Platform: `Windows 10 and later`
+       -  Profile: `BitLocker`
+       -  Name: `Enable and Configure Bitlocker using Intune`
+       -  Description: `Create an endpoint security policy for BitLocker`
        -     image 1
 ##### Configure Settings in Intune
-  -    - Enable full-disk encryption for OS and fixed data drives: `Yes`
-       - Require storage cards to be encrypted (mobile only)
-       - Hide prompt about third-party encryption:
-       - Allow standard users to enable encryption during Autopilot
-       - Configure client-driven recovery password rotation
+####### Bitlocker
+  -    - Require Device Encryption " ``Enabled` Allows the administrator to require encryption to be enabled using BitLocker device encryption
+       - Allow Warning For Other Disk Encryption: `Disabled` notification for encryption and warning prompt for encryption of other disks) and silently enable encryption on user machines.
+       - Configure Recovery Password Rotation:`Refresh on for Azure AD-joined devices` Recovery password rotation when using the operating system and fixed drives on devices connected to the AAD and Hybrid domains
+   
+   image2
+####### Bitlocker Drive Engription
+ 
+       - Select disk encryption method and encryption strength (Windows 10 [Version 1511] and later): `Enabled`
+           - Select encryption method for removable data drives: `AES-CBC 128-bit (default)`
+           - Select encryption method for operating system drives: `XTS-AES 128-bit (default)`
+           - Select encryption method for fixed data drives: `XTS-AES 128 bits (default)`
+           image 3
+####### Operating system drive
+       - Enforce drive encryption type on operating system drives : `Enabled`
+           - Select the encryption type: (Device) `Full encryption`
+           - Configure TPM startup key and PIN: `Allow startup key and PIN with TPM`
+           - Configure TPM startup key: `Allow TPM`
+           - Configure TPM startup PIN:`Allow startup PIN with TPM`
+           - Configure TPM startup:`Allow startup PIN with TPM`
+  
+       image4
+       
+####### Fixed Data Drive
+
+###### The next step is to create a Tag: I leave it as default
+
+###### Assignments
+
+The next step is to assign a group of machines on which to apply encryption. In my case, I've chosen all devices. 
+You can add exclusions in the "Excluded Groups" section below.
+
+image 6
+###### Review + Create
+The last step is to validate and create the encryption rule:
+
+
+image7
+
+
