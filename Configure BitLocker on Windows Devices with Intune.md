@@ -29,7 +29,7 @@
        -  Description: Create an endpoint security policy for BitLocker.
        -     image 1
 ##### Configure Settings in Intune
-  -    - Enable full-disk encryption for OS and fixed data drives: 'Yes'
+  -    - Enable full-disk encryption for OS and fixed data drives: `Yes`
        - Require storage cards to be encrypted (mobile only)
        - Hide prompt about third-party encryption:
        - Allow standard users to enable encryption during Autopilot
