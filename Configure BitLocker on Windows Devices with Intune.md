@@ -20,6 +20,7 @@
   -  Monitor Bitlocker Encryption Status
   -  
  ##### Create BitLocker Policy in Intune
+ 
    -  login Microsoft Intune admin center https://intune.microsoft.com
    -  Navigate to Endpoint Security node and under Manage, select Disk Encryption.To create a new policy, select Create Policy.
 
@@ -27,28 +28,34 @@
        -  Profile: `BitLocker`
        -  Name: `Enable and Configure Bitlocker using Intune`
        -  Description: `Create an endpoint security policy for BitLocker`
-       -     image 1
+
+    image 1
 ##### Configure Settings in Intune
-####### Bitlocker
-  -    - Require Device Encryption " ``Enabled` Allows the administrator to require encryption to be enabled using BitLocker device encryption
-       - Allow Warning For Other Disk Encryption: `Disabled` notification for encryption and warning prompt for encryption of other disks) and silently enable encryption on user machines.
-       - Configure Recovery Password Rotation:`Refresh on for Azure AD-joined devices` Recovery password rotation when using the operating system and fixed drives on devices connected to the AAD and Hybrid domains
+
+###### Bitlocker
+
+   -  Require Device Encryption " ``Enabled` Allows the administrator to require encryption to be enabled using BitLocker device encryption
+       -  Allow Warning For Other Disk Encryption: `Disabled` notification for encryption and warning prompt for encryption of other disks) and silently enable encryption on user machines.
+       -  Configure Recovery Password Rotation:`Refresh on for Azure AD-joined devices` Recovery password rotation when using the operating system and fixed drives on devices connected to the AAD and Hybrid domains
    
    image2
 ####### Bitlocker Drive Engription
- 
-       - Select disk encryption method and encryption strength (Windows 10 [Version 1511] and later): `Enabled`
-           - Select encryption method for removable data drives: `AES-CBC 128-bit (default)`
-           - Select encryption method for operating system drives: `XTS-AES 128-bit (default)`
-           - Select encryption method for fixed data drives: `XTS-AES 128 bits (default)`
-           image 3
-####### Operating system drive
-       - Enforce drive encryption type on operating system drives : `Enabled`
-           - Select the encryption type: (Device) `Full encryption`
-           - Configure TPM startup key and PIN: `Allow startup key and PIN with TPM`
-           - Configure TPM startup key: `Allow TPM`
-           - Configure TPM startup PIN:`Allow startup PIN with TPM`
-           - Configure TPM startup:`Allow startup PIN with TPM`
+
+  -  Select disk encryption method and encryption strength (Windows 10 [Version 1511] and later): `Enabled`
+      -  Select encryption method for removable data drives: `AES-CBC 128-bit (default)`
+      -  Select encryption method for operating system drives: `XTS-AES 128-bit (default)`
+      -  Select encryption method for fixed data drives: `XTS-AES 128 bits (default)`
+   
+image 3
+
+###### Operating system drive
+   -  login Microsoft Intune admin center https://intune.microsoft.com
+   -  Enforce drive encryption type on operating system drives : `Enabled`
+         -  Select the encryption type: (Device) `Full encryption`
+         -  Configure TPM startup key and PIN: `Allow startup key and PIN with TPM`
+         -  Configure TPM startup key: `Allow TPM`
+         -  Configure TPM startup PIN:`Allow startup PIN with TPM`
+         -  Configure TPM startup:`Allow startup PIN with TPM`
   
        image4
        
