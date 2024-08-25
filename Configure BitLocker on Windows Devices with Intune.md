@@ -39,7 +39,8 @@
        -  Configure Recovery Password Rotation:`Refresh on for Azure AD-joined devices` Recovery password rotation when using the operating system and fixed drives on devices connected to the AAD and Hybrid domains
    
    image2
-####### Bitlocker Drive Engription
+   
+###### Bitlocker Drive Engription
 
   -  Select disk encryption method and encryption strength (Windows 10 [Version 1511] and later): `Enabled`
       -  Select encryption method for removable data drives: `AES-CBC 128-bit (default)`
@@ -59,17 +60,20 @@ image 3
   
        image4
        
-####### Fixed Data Drive
+###### Fixed Data Drive
 
-###### The next step is to create a Tag: I leave it as default
+##### The next step is to create a Tag: I leave it as default
 
-###### Assignments
+##### Assignments
 
 The next step is to assign a group of machines on which to apply encryption. In my case, I've chosen all devices. 
 You can add exclusions in the "Excluded Groups" section below.
 
 image 6
-###### Review + Create
+
+##### Review + Create
+
+
 The last step is to validate and create the encryption rule:
 
 
