@@ -83,7 +83,10 @@ You can add exclusions in the "Excluded Groups" section below.
 The last step is to validate and create the encryption rule:
 
 
+
+
+
 ![7 (Medium)](https://github.com/user-attachments/assets/d99223d8-3eb5-4b4a-8cba-978085449533)
 
-
+######  Monitor Bitlocker Encryption Status in Intune
 
