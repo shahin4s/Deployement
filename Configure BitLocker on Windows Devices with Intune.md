@@ -15,7 +15,7 @@
   
 ### Create an Endpoint Security Policy to Configure BitLocker in Intune.
   -  Enable Bitlocker using Intune
-  -  Create configuration profile for Bitlocker in Intune
+  -  Create a configuration profile for Bitlocker in Intune
   -  Configure Bitlocker Policy using Intune
   -  Monitor Bitlocker Encryption Status
   -  
@@ -29,7 +29,8 @@
        -  Name: `Enable and Configure Bitlocker using Intune`
        -  Description: `Create an endpoint security policy for BitLocker`
 
-    image 1
+  ![1 (Medium)](https://github.com/user-attachments/assets/01b65018-a422-4ebe-858d-645b09de5bc6)
+
 ##### Configure Settings in Intune
 
 ###### Bitlocker
@@ -38,7 +39,8 @@
        -  Allow Warning For Other Disk Encryption: `Disabled` notification for encryption and warning prompt for encryption of other disks) and silently enable encryption on user machines.
        -  Configure Recovery Password Rotation:`Refresh on for Azure AD-joined devices` Recovery password rotation when using the operating system and fixed drives on devices connected to the AAD and Hybrid domains
    
-   image2
+ ![2 (Medium)](https://github.com/user-attachments/assets/eef6bde0-973d-4f6a-b4e5-248749643b35)
+
    
 ###### Bitlocker Drive Engription
 
@@ -58,7 +60,8 @@ image 3
          -  Configure TPM startup PIN:`Allow startup PIN with TPM`
          -  Configure TPM startup:`Allow startup PIN with TPM`
   
-       image4
+      ![3 (Medium)](https://github.com/user-attachments/assets/fa8e2554-a8b5-40d6-9449-f874d0347482)
+
        
 ###### Fixed Data Drive
 
@@ -69,7 +72,8 @@ image 3
 The next step is to assign a group of machines on which to apply encryption. In my case, I've chosen all devices. 
 You can add exclusions in the "Excluded Groups" section below.
 
-image 6
+![6 (Medium)](https://github.com/user-attachments/assets/e808ed99-ccc3-4719-b54d-b3991ec6a097)
+
 
 ##### Review + Create
 
@@ -77,6 +81,7 @@ image 6
 The last step is to validate and create the encryption rule:
 
 
-image7
+![7 (Medium)](https://github.com/user-attachments/assets/d99223d8-3eb5-4b4a-8cba-978085449533)
+
 
 
