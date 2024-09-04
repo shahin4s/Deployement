@@ -49,7 +49,8 @@
       -  Select encryption method for operating system drives: `XTS-AES 128-bit (default)`
       -  Select encryption method for fixed data drives: `XTS-AES 128 bits (default)`
    
-image 3
+![3 (Medium)](https://github.com/user-attachments/assets/6ddec608-d2b5-46dc-97b5-261dbd7abcc5)
+
 
 ###### Operating system drive
    -  login Microsoft Intune admin center https://intune.microsoft.com
@@ -65,7 +66,7 @@ image 3
        
 ###### Fixed Data Drive
 
-##### The next step is to create a Tag: I leave it as default
+##### The next step is to create a Tag: I leave it as the default
 
 ##### Assignments
 
