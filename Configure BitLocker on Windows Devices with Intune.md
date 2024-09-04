@@ -61,7 +61,8 @@
          -  Configure TPM startup PIN:`Allow startup PIN with TPM`
          -  Configure TPM startup:`Allow startup PIN with TPM`
   
-      ![3 (Medium)](https://github.com/user-attachments/assets/fa8e2554-a8b5-40d6-9449-f874d0347482)
+    ![4 (Medium)](https://github.com/user-attachments/assets/51451fea-af5a-4e47-b919-130e6987702e)
+
 
        
 ###### Fixed Data Drive
