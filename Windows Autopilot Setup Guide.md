@@ -105,7 +105,7 @@ Type	Host name	Points to	TTL
 Type	| Host name | Points 
 -----|-----------|-------
 CNAME |	EnterpriseEnrollment.shahin.at | 	EnterpriseEnrollment-s.manage.microsoft.com	
-CNAME	| EnterpriseRegistration.shahin.at |	EnterpriseRegistration.windows.net	One hour
+CNAME	| EnterpriseRegistration.shahin.at |	EnterpriseRegistration.windows.net
 
 - EnterpriseEnrollment.contoso.com
 - EnterpriseEnrollment-s.manage.microsoft.com
