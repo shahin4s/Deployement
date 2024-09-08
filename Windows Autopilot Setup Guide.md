@@ -98,9 +98,10 @@ let’s have a look at the CNAME validation
 
 If you see the error “CNAME for domain not configured or configured incorrectly“, follow the next steps
 
-We need to do is add or create the following CNAME redirect entries on our DNS server. Ref:https://learn.microsoft.com/en-us/mem/intune/enrollment/windows-enrollment-create-cname
--EnterpriseEnrollment.contoso.com
--EnterpriseEnrollment-s.manage.microsoft.com
+We need to do is add or create the following CNAME redirect entries on our DNS server. (Ref)[https://learn.microsoft.com/en-us/mem/intune/enrollment/windows-enrollment-create-cname]
+
+- EnterpriseEnrollment.contoso.com
+- EnterpriseEnrollment-s.manage.microsoft.com
 
 As we are using Azure DNS here is the configuration.
 
