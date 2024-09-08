@@ -100,6 +100,13 @@ If you see the error “CNAME for domain not configured or configured incorrectl
 
 We need to do is add or create the following CNAME redirect entries on our DNS server. (Ref)[https://learn.microsoft.com/en-us/mem/intune/enrollment/windows-enrollment-create-cname]
 
+Type	Host name	Points to	TTL
+
+Type	| Host name | Points 
+-----|-----------|-------
+CNAME |	EnterpriseEnrollment.shahin.at | 	EnterpriseEnrollment-s.manage.microsoft.com	
+CNAME	| EnterpriseRegistration.shahin.at |	EnterpriseRegistration.windows.net	One hour
+
 - EnterpriseEnrollment.contoso.com
 - EnterpriseEnrollment-s.manage.microsoft.com
 
@@ -110,6 +117,7 @@ As we are using Azure DNS here is the configuration.
 
 
 ##### Enrollment Status Page
+
 The Enrollment Status Page displays the enrollment status during the enrollment to the user. It also allows the administrator to block the device if not all the required applications are installed. For example, you can block access to the desktop during the enrollment process until a required third-party virus scanner is installed. The Enrollment Status Page and blocking access to the desktop are both optional settings but increase the user experience by displaying in what stage the enrollment is
 let’s have a look at the CNAME validation.
 
