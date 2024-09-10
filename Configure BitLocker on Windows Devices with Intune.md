@@ -1,9 +1,13 @@
 # Configure BitLocker on Windows Devices with Intune
 
 ### What is BitLocker?
-  BitLocker, a feature offered by Windows, helps encrypt volumes, aiding your organization in avoiding data theft and loss from malicious attempts. It’s a feature that enables encryption at res
+  Think of BitLocker as a digital lock that protects your computer a feature offered by Windows, that helps encrypt volumes, aiding your organization in avoiding data theft and loss from malicious attempts. It’s a feature that enables encryption at res
 
 ### Why do we need to enable Bitlocker?
+
+**Data Security**: If your computer is lost or stolen, your personal information will be safe because it's locked behind the BitLocker password.
+**Compliance:** Many businesses and organizations require data encryption to meet security standards.
+**Peace of Mind**: Knowing your data is protected can give you peace of mind.
 
 
 ### Requirements to enable BitLocker with Intune:
