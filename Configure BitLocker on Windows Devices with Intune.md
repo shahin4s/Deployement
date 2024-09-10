@@ -5,9 +5,11 @@
 
 ### Why do we need to enable Bitlocker?
 
-**Data Security**: If your computer is lost or stolen, your personal information will be safe because it's locked behind the BitLocker password.
-**Compliance:** Many businesses and organizations require data encryption to meet security standards.
-**Peace of Mind**: Knowing your data is protected can give you peace of mind.
+  **Data Security**: If your computer is lost or stolen, your personal information will be safe because it's locked behind the BitLocker password.
+  
+  **Compliance:** Many businesses and organizations require data encryption to meet security standards.\
+  
+  **Peace of Mind**: Knowing your data is protected can give you peace of mind.
 
 
 ### Requirements to enable BitLocker with Intune:
