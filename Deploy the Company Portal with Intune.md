@@ -75,5 +75,7 @@ Let’s verify the deployment of the Company Portal app with Intune. After deplo
   ![5](https://github.com/user-attachments/assets/925e1d5e-6341-4be6-bfaf-cc26e245297f)
 
 
+
+
 # Thank you 
 
