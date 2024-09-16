@@ -9,16 +9,18 @@ The Company Portal can be installed on various operating systems including Windo
   - Sign in to the [Intune admin center](https://intune.microsoft.com/) .
   - click on **Apps** and then click on **All Apps**.
   - Click on + Add and Select **Microsoft Store app (new)** from the App type.
-  - 
+ 
 
 ![1](https://github.com/user-attachments/assets/2b14a986-2572-4654-b21c-aded88df0315)
 
 
   - Click on Search the Microsoft Store app (new) to search for any store application.
   - Company Portal app found, click on it, and proceed to create an app deployment.
-  - 
+
+
 
 ![2](https://github.com/user-attachments/assets/4a1a8113-3823-4b78-8297-748d8aa7c843)
+
 
 - App information Required Fields:
   
@@ -29,10 +31,14 @@ The Company Portal can be installed on various operating systems including Windo
 Change the App information if you want. I changed the Install behavior from User to System, because I want to deploy the app to devices so all users can use the Company Portal that is preinstalled during Autopilot.
 I also added the show this future app in company portal. **Click** Next when you are done changing the information of the App.
 
+
 ![3](https://github.com/user-attachments/assets/529487b4-d18f-40ec-ad2a-7a26fadaf750)
 
 
+
 #### Assignments
+
+ 
  -   Now assign the App to the device or user groups you want. Like I said I want the Company Portal to be deployed to All Devices. So I selected All Devices with a Required deployment. Select Next.
 
    ![4](https://github.com/user-attachments/assets/224aa5d7-94a8-424a-8813-578106a4e863)
