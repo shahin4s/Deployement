@@ -18,6 +18,7 @@ The Company Portal can be installed on various operating systems including Windo
 ![2](https://github.com/user-attachments/assets/4a1a8113-3823-4b78-8297-748d8aa7c843)
 
 - App information Required Fields:
+        - 
       -  Name – Provide a unique name for the application, such as Company Portal.
       -  Description – Provide a helpful description
       -  Publisher – Microsoft Corporation
