@@ -27,7 +27,8 @@ The first step in deploying the Windows 11 24H2 update involves creating a featu
   -  Log in to the Microsoft Intune portal https://intune.microsoft.com/#home
   -  Go To `Devices` > `Windows` > `Feature updates` for Windows 10 and later and click `Create profile`
 
-   ![1](https://github.com/user-attachments/assets/dbf0b42f-db09-459f-a515-37e940fc58f3)
+   ![image](https://github.com/user-attachments/assets/d1f39b85-92f1-4a54-8793-69cd98ab3346)
+
 
 
 ### Configure Feature Update Deployment Settings
