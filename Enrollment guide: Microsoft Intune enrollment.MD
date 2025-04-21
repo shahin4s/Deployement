@@ -1,6 +1,6 @@
 
 
-##### To get started with platform enrollment, select the guide that best matches your scenario. Here's a summary of the available options:
+#### To get started with platform enrollment, select the guide that best matches your scenario. Here's a summary of the available options:
 
 
 -  [Windows](https://github.com/shahin4s/Deployement/blob/main/Windows%20Autopilot%20Setup%20Guide.md): Guide for Windows device enrollment.
