@@ -7,5 +7,6 @@ Managing macOS devices in a corporate environment has never been easier with Mic
 ✔ Apple MDM Push Certificate configured in Intune
 
 ✔ Apple Enrollment Program Token configured in Intune
+
 ✔ Company Portal App installed on macOS devices (required for User Enrollment)
 
