@@ -20,7 +20,7 @@ Before you can start enrolling devices into Intune, you need to set the MDM Auth
 
 -  Sign in to the Intune admin center.
 -  Select Tenant Administration -> MDM Authority to set the MDM Authority to Microsoft Intune.
--  Once you have set the MDM Authority, you can check its status as shown below:
+-  Once you have set the MDM Authority, you can check its status as shown below
 
 
 
