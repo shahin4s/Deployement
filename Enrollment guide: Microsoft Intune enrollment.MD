@@ -6,7 +6,7 @@ I will show the all the steps required for the configuration of Initial setup of
 
 
 ## License Requirements for Microsoft Intune
-## License Requirements for Microsoft Intune
+
 
 Microsoft Intune is included in the following licenses:
 
