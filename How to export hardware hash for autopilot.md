@@ -39,12 +39,11 @@ If you're in **OOBE (Out-of-Box Experience)** or Windows setup:
 1. Press `Shift + F10` to open **Command Prompt**
 2. Type `explorer` to launch the file browser
 3. Navigate to:
-   `Settings > Accounts > Access work or school`
-4. You’ll find the option to **export** the hardware hash under Autopilot settings.
+   Windows device, navigate to Settings > Accounts > Access work or school. Then, select your work or school account and click on Export your management log files
    
    ![Hash](https://github.com/user-attachments/assets/7c94c863-d4e4-4868-bc4c-d93e4b425550)
 
-Finally, we have the AutopilotHWID.csv file in the **C:\Users\Public\Documents\MDMDiagnostics** directory that is about 8 KB in size.
+Finally, the log files will be saved in the **C:\Users\Public\Public Documents\MDMDiagnostics** directory, which is about 8 KB in size.
 
 ![image](https://github.com/user-attachments/assets/80b6f91b-d093-4e42-9c95-5a3868434a13)
 
