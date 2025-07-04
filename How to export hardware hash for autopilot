@@ -42,7 +42,7 @@ If you're in **OOBE (Out-of-Box Experience)** or Windows setup:
    `Settings > Accounts > Access work or school`
 4. You’ll find the option to **export** the hardware hash under Autopilot settings.
 
-Finally, we have the AutopilotHWID.csv file in the **C:\Users\Public\Documents\MDMDiagnostics** directory that is about 8 KB in size
+Finally, we have the AutopilotHWID.csv file in the **C:\Users\Public\Documents\MDMDiagnostics** directory that is about 8 KB in size.
 ---
 
 ## ✅ Next Step
