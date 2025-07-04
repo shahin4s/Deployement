@@ -39,7 +39,7 @@ If you're in **OOBE (Out-of-Box Experience)** or Windows setup:
 1. Press `Shift + F10` to open **Command Prompt**
 2. Type `explorer` to launch the file browser
 3. Navigate to:
-   Windows device, navigate to Settings > Accounts > Access work or school. Then, select your work or school account and click on Export your management log files
+   Windows device, navigate to Settings > Accounts > Access work or school. Then, select your work or school account and click on `Export your management log files`
    
    ![Hash](https://github.com/user-attachments/assets/7c94c863-d4e4-4868-bc4c-d93e4b425550)
 
