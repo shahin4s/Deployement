@@ -1,96 +1,115 @@
-# Configure BitLocker on Windows Devices with Intune
 
-### What is BitLocker?
-  Think of BitLocker as a digital lock that protects your computer a feature offered by Windows, that helps encrypt volumes, aiding your organization in avoiding data theft and loss from malicious attempts. It’s a feature that enables encryption at res
+# 🔐 Configure BitLocker on Windows Devices with Intune
 
-### Why do we need to enable Bitlocker?
+BitLocker helps protect your data by encrypting the drives on your device. When managed through **Microsoft Intune**, you can enable and enforce encryption across your organization's devices quickly and securely.
 
-  **Data Security**: If your computer is lost or stolen, your personal information will be safe because it's locked behind the BitLocker password.
-  **Compliance:** Many businesses and organizations require data encryption to meet security standards.
-  **Peace of Mind**: Knowing your data is protected can give you peace of mind.
+---
 
+## 🧩 What is BitLocker?
 
-### Requirements to enable BitLocker with Intune:
-- Microsoft Endpoint Manager Intune License
-- Entra Joined or Hybrid Entra Joined device.
-- Devices must have a TPM chip at version 1.2 or higher (2.0 recommended)
-- Windows 10/11 Pro, Education & Enterprise
-- BIOS set to Native EUFI
-  
-### Create an Endpoint Security Policy to Configure BitLocker in Intune.
-  -  Enable Bitlocker using Intune
-  -  Create a configuration profile for Bitlocker in Intune
-  -  Configure Bitlocker Policy using Intune
-  -  Monitor Bitlocker Encryption Status
-  -  
- ##### Create BitLocker Policy in Intune
- 
-   -  login Microsoft Intune admin center https://intune.microsoft.com
-   -  Navigate to Endpoint Security node and under Manage, select Disk Encryption.To create a new policy, select Create Policy.
+Think of **BitLocker** as a digital lock for your device. It encrypts your drive to help prevent **data theft**, even if the device is lost or stolen.
 
-       -  Platform: `Windows 10 and later`
-       -  Profile: `BitLocker`
-       -  Name: `Enable and Configure Bitlocker using Intune`
-       -  Description: `Create an endpoint security policy for BitLocker`
+---
 
-  ![1 (Medium)](https://github.com/user-attachments/assets/01b65018-a422-4ebe-858d-645b09de5bc6)
+## 🔒 Why Enable BitLocker?
 
-##### Configure Settings in Intune
+* **Data Security**: Protects sensitive data on lost/stolen devices.
+* **Compliance**: Meets enterprise security requirements.
+* **Peace of Mind**: Know your information is encrypted and safe.
 
-###### Bitlocker
+---
 
-   -  Require Device Encryption " ``Enabled` Allows the administrator to require encryption to be enabled using BitLocker device encryption
-       -  Allow Warning For Other Disk Encryption: `Disabled` notification for encryption and warning prompt for encryption of other disks) and silently enable encryption on user machines.
-       -  Configure Recovery Password Rotation:`Refresh on for Azure AD-joined devices` Recovery password rotation when using the operating system and fixed drives on devices connected to the AAD and Hybrid domains
-   
- ![2 (Medium)](https://github.com/user-attachments/assets/eef6bde0-973d-4f6a-b4e5-248749643b35)
+## 📋 Requirements for BitLocker via Intune
 
-   
-###### Bitlocker Drive Engription
+* ✅ Intune (Microsoft Endpoint Manager) license
+* ✅ Device must be **Entra joined** or **Hybrid Entra joined**
+* ✅ **TPM 1.2 or higher** (2.0 recommended)
+* ✅ Windows 10/11 Pro, Enterprise, or Education
+* ✅ BIOS set to **Native UEFI**
 
-  -  Select disk encryption method and encryption strength (Windows 10 [Version 1511] and later): `Enabled`
-      -  Select encryption method for removable data drives: `AES-CBC 128-bit (default)`
-      -  Select encryption method for operating system drives: `XTS-AES 128-bit (default)`
-      -  Select encryption method for fixed data drives: `XTS-AES 128 bits (default)`
-   
-![3 (Medium)](https://github.com/user-attachments/assets/6ddec608-d2b5-46dc-97b5-261dbd7abcc5)
+---
 
+## 🛠️ Steps to Configure BitLocker with Intune
 
-###### Operating system drive
-   -  login Microsoft Intune admin center https://intune.microsoft.com
-   -  Enforce drive encryption type on operating system drives : `Enabled`
-         -  Select the encryption type: (Device) `Full encryption`
-         -  Configure TPM startup key and PIN: `Allow startup key and PIN with TPM`
-         -  Configure TPM startup key: `Allow TPM`
-         -  Configure TPM startup PIN:`Allow startup PIN with TPM`
-         -  Configure TPM startup:`Allow startup PIN with TPM`
-  
-    ![4 (Medium)](https://github.com/user-attachments/assets/51451fea-af5a-4e47-b919-130e6987702e)
+### 1. Create a BitLocker Policy
 
+* Log in to [Microsoft Intune Admin Center](https://intune.microsoft.com)
+* Go to:
+  `Endpoint Security` → `Disk Encryption` → **Create Policy**
+* Select:
 
-       
-###### Fixed Data Drive
+  * **Platform**: `Windows 10 and later`
+  * **Profile**: `BitLocker`
+  * **Name**: `Enable and Configure BitLocker using Intune`
+  * **Description**: `Endpoint security policy for BitLocker encryption`
 
-##### The next step is to create a Tag: I leave it as the default
+![Create Policy](https://github.com/user-attachments/assets/01b65018-a422-4ebe-858d-645b09de5bc6)
 
-##### Assignments
+---
 
-The next step is to assign a group of machines on which to apply encryption. In my case, I've chosen all devices. 
-You can add exclusions in the "Excluded Groups" section below.
+### 2. Configure BitLocker Settings
 
-![6 (Medium)](https://github.com/user-attachments/assets/e808ed99-ccc3-4719-b54d-b3991ec6a097)
+#### 🔧 BitLocker
 
+* **Require Device Encryption**: `Enabled`
+* **Allow Warning for Other Disk Encryption**: `Disabled`
+* **Recovery Password Rotation**: `Refresh on for Azure AD-joined devices`
 
-##### Review + Create
+![Settings 1](https://github.com/user-attachments/assets/eef6bde0-973d-4f6a-b4e5-248749643b35)
 
+---
 
-The last step is to validate and create the encryption rule:
+#### 🔧 BitLocker Drive Encryption
 
+* **Disk Encryption Method and Strength**: `Enabled`
 
+  * **Removable Drives**: `AES-CBC 128-bit`
+  * **OS Drives**: `XTS-AES 128-bit`
+  * **Fixed Drives**: `XTS-AES 128-bit`
 
+![Settings 2](https://github.com/user-attachments/assets/6ddec608-d2b5-46dc-97b5-261dbd7abcc5)
 
+---
 
-![7 (Medium)](https://github.com/user-attachments/assets/d99223d8-3eb5-4b4a-8cba-978085449533)
+#### 🔧 OS Drive Settings
 
-######  Monitor Bitlocker Encryption Status in Intune
+* **Enforce Drive Encryption Type**: `Enabled`
+
+  * **Encryption Type**: `Full Encryption`
+  * **TPM & PIN Options**:
+
+    * `Allow startup key and PIN with TPM`
+    * `Allow TPM`
+    * `Allow startup PIN with TPM`
+
+![Settings 3](https://github.com/user-attachments/assets/51451fea-af5a-4e47-b919-130e6987702e)
+
+---
+
+### 3. Assign the Policy
+
+* Assign the policy to a group (e.g., All Devices)
+* Optional: Add exclusions under "Excluded Groups"
+
+![Assignments](https://github.com/user-attachments/assets/e808ed99-ccc3-4719-b54d-b3991ec6a097)
+
+---
+
+### 4. Review + Create
+
+* Review all settings
+* Click **Create** to deploy the policy
+
+![Create](https://github.com/user-attachments/assets/d99223d8-3eb5-4b4a-8cba-978085449533)
+
+---
+
+## 📊 Monitor BitLocker Encryption Status
+
+To monitor encryption status:
+
+* Go to:
+  `Endpoint Security` → `Disk Encryption`
+* Review the **compliance and encryption reports**
+
 
